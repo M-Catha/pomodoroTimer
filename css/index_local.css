@@ -60,11 +60,10 @@ body {
 	user-select:none;
 }
 
-.status {
-	margin:50px auto;
-	color:white;
-	font-weight:bolder;
-	font-size:100px;
-	width:50%;
+.highlight {
+	text-shadow: 2px 2px 17px rgba(255, 3, 0, 1);
 }
 
+.greyOut {
+	opacity:0.3;
+}
