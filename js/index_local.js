@@ -79,7 +79,7 @@ function resetClock() {
 	$(".breakLength").text("5");
 	$(".sessionLength").text("25");
 	$(".breakTitle, .sessionTitle").removeClass("highlight");
-	$(".breakTitle, .sessionTitle, .breakTime, .sessionTime").removeClass("greyOut");
+	$(".breakTitle, .sessionTitle, .breakTimer, .sessionTimer").removeClass("greyOut");
 	playSound("sounds/Percussion.mp3")
 	initClock();
 }
