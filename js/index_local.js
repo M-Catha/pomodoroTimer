@@ -17,11 +17,11 @@ function initClock(timeInSec, autoStart, intervalName) {
 		callbacks: {
 			start: function() {
 				playSound("sounds/Accept.mp3");
+				activeStatus();
 			},
 			stop: function() {
 				var timeEnd = clock.getTime().time;
 				beginNextInterval(timeEnd, interval);
-
 			}
 		}
 	})
@@ -78,6 +78,8 @@ function resetClock() {
 	$(".breakLengthDown, .breakLengthUp, .sessionLengthUp, .sessionLengthDown").removeAttr('disabled');
 	$(".breakLength").text("5");
 	$(".sessionLength").text("25");
+	$(".breakTitle, .sessionTitle").removeClass("highlight");
+	$(".breakTitle, .sessionTitle, .breakTime, .sessionTime").removeClass("greyOut");
 	playSound("sounds/Percussion.mp3")
 	initClock();
 }
@@ -114,6 +116,23 @@ function playSound(url) {
 	var audio = document.getElementById("sound");
 	audio.src = url;
 	audio.play();
+}
+
+// Change classes on active/deactive time periods
+function activeStatus() {
+	if (currentInterval === "session") {
+		$(".sessionTitle").addClass("highlight");
+		$(".breakTimer").addClass("greyOut");
+
+		$(".breakTitle").removeClass("highlight");
+		$(".sessionTimer").removeClass("greyOut");
+	} else {
+		$(".breakTitle").addClass("highlight");
+		$(".sessionTimer").addClass("greyOut");
+
+		$(".sessionTitle").removeClass("highlight");
+		$(".breakTimer").removeClass("greyOut");
+	}
 }
 
 // Event Handlers
