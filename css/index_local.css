@@ -1,0 +1,70 @@
+body {
+	background-image:url("../images/binding_dark.png");
+	background-repeat:repeat;
+	background-attachment:fixed;
+	font-family:'Ubuntu';
+}
+
+.footer {
+	position:fixed;
+	right:0;
+	bottom:0;
+	margin:0;
+	width:75px;
+	height:73px;
+	background-image:url("../images/tomato.png");
+	background-repeat:no-repeat;
+	background-position:bottom right;
+}
+
+.container {
+	width:75%;
+	margin:50px auto 0px auto;
+	text-align:center;
+}
+
+.title {
+	font-family:'Pacifico';
+	font-size:10vmin;
+	color:white;
+}
+
+.breakTimer, .sessionTimer {
+	display:inline-block;
+	margin:20px 30px 30px 30px;
+}
+
+.breakTitle, .sessionTitle {
+	font-size:3.5vmin;
+	font-weight:bolder;
+	color:white;
+	margin-bottom:10px;
+}
+
+.clock-wrapper {
+	text-align:center;
+}
+
+.flip-clock-wrapper .flip-clock-label {
+	left:25px;
+	font-size:35px;
+	color:white;
+	font-weight:bolder;
+	font-family:'Ubuntu';
+}
+
+#clock {
+	margin:50px 0px 30px 0px;
+	display:inline-block;
+	width:auto;
+	user-select:none;
+}
+
+.status {
+	margin:50px auto;
+	color:white;
+	font-weight:bolder;
+	font-size:100px;
+	width:50%;
+}
+

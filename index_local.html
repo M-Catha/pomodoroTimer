@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<title>Pomodoro Clock</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="assets/FlipClock-master/compiled/flipclock.css">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico|Ubuntu" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/button.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/icon.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index_local.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="assets/FlipClock-master/compiled/flipclock.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="title">Pomodoro Timer</div>
+			<div class="timers">
+				<div class="breakTimer">
+					<div class="breakTitle">Break Length</div>
+					<div class="massive ui buttons break">
+						<button class="ui icon blue button breakLengthDown">
+							<i class="left chevron icon"></i>
+						</button>
+						<button class="ui button">
+							<span class="breakLength">5</span><span class="breakMinute"> minute(s)</span>
+						</button>
+						<button class="ui icon blue button breakLengthUp">
+							<i class="right chevron icon"></i>
+						</button>
+					</div>
+				</div>
+				<div class="sessionTimer">
+					<div class="sessionTitle">Session Length</div>
+					<div class="massive ui buttons session">
+						<button class="ui icon blue button sessionLengthDown">
+							<i class="left chevron icon"></i>
+						</button>
+						<button class="ui button">
+							<span class="sessionLength">25</span><span class="sessionMinute"> minute(s)</span>
+						</button>
+						<button class="ui icon blue button sessionLengthUp">
+							<i class="right chevron icon"></i>
+						</button>
+					</div>
+				</div>
+				<div class="clock-wrapper">
+					<div id="clock"></div>
+				</div>
+				<div class="ui vertical buttons">
+					<button class="ui massive labeled icon button green start">
+					<i class="play icon"></i>
+					Start
+					</button>
+					<button class="ui massive labeled icon button red stop">
+					<i class="pause icon"></i>
+					Pause
+					</button>
+					<button class="ui massive labeled icon button orange reset">
+					<i class="refresh icon"></i>
+					Reset
+					</button>
+				</div>
+				<div class="footer">
+				</div>
+				<audio id="sound"></audio>
+		</div>
+	<script type="text/javascript" src="js/index_local.js"></script>
+	</body>
+	
+</html>
+
