@@ -16,4 +16,4 @@ Clock is made using the [FlipClock.js library](http://flipclockjs.com/).
 
 Live demo here:
 
-[Code Pen](http://s.codepen.io/MCatha/debug/ggrVNo/NQMzYvQRXzmk)
+[Github Pages](https://m-catha.github.io/pomodoroTimer/)
